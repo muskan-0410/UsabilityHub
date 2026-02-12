@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+.smallbold{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+.prim-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2 ease-out;
+    text-align: center;
+}
+.prim-button:hover{
+    background-color: var(--accent-color-dark);
+}
+.sec-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.sec-button:hover{
+    color: var(--accent-color) !important;
+    border-color: var(--accent-color);
+}
+.top-banner{
+    background-image: url(https://github.com/Anuj-Kumar-Sharma/Web-Development-Course/blob/master/learncss/12.%20flex%20complete%20landing%20page/assets/asset%2030.png?raw=true);
+    background-color: #4fb3d4;
+    background-size: 300px;
+}
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+/*nav*/
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.company-logo img{
+    width: 200px;
+}
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+.hover-links{
+    color: var(--primary-text-color);
+    transition: 0.2 ease-out;
+}
+.hover-links:hover{
+    color: var(--accent-color);
+}
+.nav-toggle{
+    display: none;
+}
+/*header*/
+header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+.header-sec{
+    justify-content: center;
+    gap: 50px;
+}
+.left{
+    max-width: 40vw;
+}
+.left h1{
+    margin-top: 20px;
+}
+.get-btn{
+    margin-top: 20px;
+}
+.right img{
+    width: 100%;
+}
+/*company-section*/
+.com-hed{
+    margin-block: 30px;
+    color: var(--primary-text-color);
+    margin-left: 45%;
+    transform: translateX(-45%);
+}
+.logos{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: var(--padding-inline-section);
+}
+.logo{
+    height: 46px;
+}
+/* feature section*/
+.feature{
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url(https://raw.githubusercontent.com/Anuj-Kumar-Sharma/Web-Development-Course/1d2cb7d4283309f830c3c255a2e9851b7cd05160/learncss/12.%20flex%20complete%20landing%20page/assets/asset%2032.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.feature-head{
+    text-align: center;
+    padding: 80px var(--padding-inline-section);
+}
+.feature-head h2{
+    margin-bottom: 20px;
+}
+.fea-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.fea-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+}
+.fea-card img{
+    width: 60px;
+}
+/*big feature*/
+.big-feature{
+    padding: 30px var(--padding-inline-section) 0;
+
+}
+.bigfcont{
+    gap: 30px;
+}
+.two{
+    flex-direction: row-reverse;
+}
+.bigfimg img{
+    width: 100%;
+}
+.fea-desc{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*example section*/
+.ex-area{
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.ex-card{
+    width: 23%;
+    position: relative;
+    height: 300px;
+    /* bacN */
+    background:linear-gradient(rgb(0,0,0,0.1), rgb(0, 0, 0,0.8)),url(https://github.com/Anuj-Kumar-Sharma/Web-Development-Course/blob/master/learncss/12.%20flex%20complete%20landing%20page/assets/asset%2035.jpeg?raw=true);
+    background-size: cover;
+    transition: 0.2 ease-out;
+}
+.ex-card:nth-child(4){
+    background:linear-gradient(rgb(0,0,0,0.1), rgb(0, 0, 0,0.8)),url(https://github.com/Anuj-Kumar-Sharma/Web-Development-Course/blob/master/learncss/12.%20flex%20complete%20landing%20page/assets/asset%2037.jpeg?raw=true);
+    background-size: cover;
+}
+.ex-card:hover{
+    box-shadow: 0 0 10px #888;
+}
+.ex-card h3{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+/*CTA section*/
+.cta-cont{
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    text-align: center;
+    /* background-color: #183b56; */
+}
+.cta{
+    background-color: #183b56;
+    padding: 120px var(--padding-inline-section) 80px;
+}
+.cta-cont p{
+    color: white;
+    margin: 20px;
+}
+/*footer*/
+footer{
+    padding: 20px;
+    background-color: #ebf2fa;
+}
+.link{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.foot-cont{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/*sub-footer*/
+.subfooter{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+}
+.sub-foot-cont{
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
